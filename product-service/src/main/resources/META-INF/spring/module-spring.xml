@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="product.service.service.impl.ProductLocalServiceImpl" id="product.service.service.ProductLocalService" />
+	<bean class="product.service.service.impl.ProductServiceImpl" id="product.service.service.ProductService" />
+	<bean class="product.service.service.persistence.impl.ProductPersistenceImpl" id="product.service.service.persistence.ProductPersistence" parent="basePersistence" />
+</beans>

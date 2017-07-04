@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
+
+<service-builder package-path="product.service">
+    <namespace>catalog</namespace>
+
+    <entity local-service="true" name="Product" remote-service="true" uuid="true">
+
+
+        <!-- Primary Key -->
+        <column name="productId" primary="true" type="long" />
+        <!-- Other columns -->
+        <column name="name" type="String" />
+        <column name="description" type="String" />
+        <column name="price" type="int" />
+        <column name="sku" type="String" />
+        <column name="ratings" type="int" />
+
+        <!-- Order -->
+        <order by="asc">
+            <order-column name="name" />
+        </order>
+
+    </entity>
+</service-builder>

@@ -1,0 +1,1 @@
+create index IX_5AF526A5 on catalog_Product (uuid_[$COLUMN_LENGTH:75$]);
